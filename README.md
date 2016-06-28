@@ -3,7 +3,7 @@
 
 
 
-####View live at [www.EveryoneRidesNice.com](https://www.EveryoneRidesNice.com)
+####View live at  [www.EveryoneRidesNice.com](http://www.EveryoneRidesNice.com)
 
 
 ### **Everyone Rides NICE(Nassau InterCounty Express)**
