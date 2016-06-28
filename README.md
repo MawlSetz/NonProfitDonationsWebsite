@@ -1,12 +1,12 @@
 
 # Donations website 
-___________________________________________________________________________________________________
+
+
+
+####View live at [www.EveryoneRidesNice.com](https://www.EveryoneRidesNice.com)
 
 
 ### **Everyone Rides NICE(Nassau InterCounty Express)**
-
-####View live at[www.EveryoneRidesNice.com](https://www.EveryoneRidesNice.com)
-
 
 
 Everyone Rides Nice is a non-profit that connects donors and agencies to provide free bus service on the Nassau InterCounty Express. Funds are donated using PayPal's authorization. 
