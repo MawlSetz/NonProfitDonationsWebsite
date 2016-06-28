@@ -20,9 +20,11 @@ Everyone Rides Nice is a non-profit that connects donors and agencies to provide
 __________________________________________________________________________________________________
 
 Node
-Bootstrap
-JQuery
-JS
+
+Javascript
+
+Jquery
+
 CSS
 
 
@@ -44,11 +46,13 @@ Molly Setzer
 ### License
 ___________________________________________________________________________________________________
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License 
 
 
 
 ### Acknowledgements
 ___________________________________________________________________________________________________
 
-Images from [UnSplash](https://www.unsplash.com) and permitted for private and commercial use - [Creative Commons Zero](https://unsplash.com/license)
+- images from [UnSplash](https://www.unsplash.com) and permitted for private and commercial use - [Creative Commons Zero](https://unsplash.com/license)
+
+- fonts from [Adobe Typekit](https://typekit.com)
