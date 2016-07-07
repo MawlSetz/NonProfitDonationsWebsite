@@ -18,6 +18,10 @@ router.get("/about",function(req,res){
   res.sendFile(path + "about.html");
 });
 
+app.get("/donate", function(req,res){
+  res.sendFile(path + "donate.html");
+})
+
 app.use("/",router);
 
 app.use("*",function(req,res){

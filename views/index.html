@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="MollySetzer">
 
     <title>Everyone Rides Nice</title>
 
@@ -25,8 +25,15 @@
     <!--  Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!--  CSS -->
     <link href="css/main.css" rel="stylesheet">
+
+    <!--  JavaScript-->
+    <script src="/js/main.js"></script>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,50 +49,64 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container top">
-          <img class="logo" src="/images/tire.png">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <!-- <i class="fa fa-bus" aria-hidden="true"></i> -->
                 <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 </button> -->
-                <a class="navbar-brand" href="#">
-                  <img class="nav-text" src="/images/ERNtextSmall.png">
+                <a href="" class="navbar-brand" href="#">
+                  <img class="nav-text" src="/images/newNICE_logoSmall.png">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div>
-                <ul class="nav navbar-nav nav-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                      <a href="#donate">Donate</a>
-                  </li>
-                </ul>
+            <div class="big-nav">
+              <ul class="nav navbar-nav nav-right">
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                   <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+                <!-- <li>
+                  <a href="#contact">Apply</a>
+                </li> -->
+                <li>
+                  <a href="#faq">FAQs</a>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-lg btn-top" id="btnSubmit"> Donate Now </button>
+                </li>
+              </ul>
+            </div>
+            <div class="hiddenMenu">
+              <button type="button" class="btn btn-primary menu">MENU</button>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 <div class="background-image">
-  <img src="/images/busRidersGreyscaleShort.jpg">
+  <img src="/images/busRidersGreyscaleShort3.jpg">
 </div>
     <!-- Full Width Image Header -->
     <header class="header-image">
         <div class="headline">
             <div class="container">
-                <img class="main-logo" src="/images/ERNtext.png">
-                <p> Everyone Rides Nice fills the transportation gap for people who need access to opportunity. Job-seekers, learners, and people who get vital support from non-profit agencies can’t enrich their lives unless they can get to and from those opportunities. NICE provides the service while ERN provides the fare.</p>
+                <img class="main-logo" src="/images/newNICE_logo.png">
             </div>
         </div>
     </header>
-
+  <div class="transition container">
+    <img class="logo" src="/images/tire.png">
+      <p class="main-text"> Everyone Rides Nice is a non-profit that provides bus fare to those in need.
+        <br> NICE bus provides the service, while ERN provides the fare. </p>
+        <br>
+        <img class="nice-logo" src="/images/niceBusLogo.png">
+        <img class="bus-cutout" src="/images/busCutout.jpeg">
+  </div>
     <!-- Page Content -->
     <div class="container">
 
@@ -94,11 +115,16 @@
         <!-- First Featurette -->
         <div class="featurette" id="about">
             <img class="featurette-image img-circle img-responsive pull-right" src="/images/emptyBus.jpg">
-            <h2 class="featurette-heading">Sometimes all people need
+            <h2 class="featurette-heading">We're working to
                 <br>
-                <span class="text-muted"> is a bus ride</span>
+                <span class="text-muted"> fill the transportation gap</span>
             </h2>
-            <p class="lead">ERN exists to provide access to things and services that are vital to Long Islanders’ well-being. Sometimes all people need is a bus ride to end their isolation and enrich their lives. Everyone Rides NICE makes sure that the cost of bus fare is not a barrier to those people.</p>
+            <br>
+            <br>
+            <!-- Everyone Rides Nice fills the transportation gap for people who need access to opportunity. People who get vital support from non-profit agencies can get the foot-up they need. -->
+            <!-- for people who need access to opportunity. People who get vital support from non-profit agencies can get the foot-up they need. -->
+            <p class="lead">for people who need access to opportunity. People who get vital support from non-profit agencies can get the foot-up they need.</p>
+            <!-- <p class="lead">ERN exists to provide access to things and services that are vital to Long Islanders’ well-being. Sometimes all people need is a bus ride to end their isolation and enrich their lives. Everyone Rides NICE makes sure that the cost of bus fare is not a barrier to those people.</p> -->
         </div>
 
         <hr class="featurette-divider">
@@ -184,7 +210,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="main">
         <div class="row">
             <div class="col-lg-12">
                 <p>Copyright &copy; Everyone Rides Nice 2016</p>
