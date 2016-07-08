@@ -1,5 +1,8 @@
-$(document).ready(function() {
-  $( "#btnSubmit" ).click(function() {
-    window.open( "localhost:3000/donate" );
+
+$(document).ready(function(){
+  $("#button").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#donate").offset().top
+      }, 2000);
   });
 });

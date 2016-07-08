@@ -22,11 +22,13 @@
     <!--  font  awesome icons-->
     <script src="https://use.fontawesome.com/4f77ba3166.js"></script>
 
-    <!--  Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--  Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 
     <!--  CSS -->
     <link href="css/main.css" rel="stylesheet">
@@ -64,9 +66,9 @@
                 <li>
                   <a href="#about">About</a>
                 </li>
-                <li>
+                <!-- <li>
                    <a href="#services">Services</a>
-                </li>
+                </li> -->
                 <li>
                   <a href="#contact">Contact</a>
                 </li>
@@ -77,12 +79,24 @@
                   <a href="#faq">FAQs</a>
                 </li>
                 <li>
-                  <button class="btn btn-primary btn-lg btn-top" id="btnSubmit"> Donate Now </button>
+                  <button class="btn btn-primary btn-lg btn-top" id="button"> Donate Now </button>
                 </li>
               </ul>
             </div>
-            <div class="hiddenMenu">
-              <button type="button" class="btn btn-primary menu">MENU</button>
+            <div class="hidden-menu">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Menu
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#faq">FAQs</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#donate">Donate Now</a></li>
+                </ul>
+              </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -99,13 +113,21 @@
             </div>
         </div>
     </header>
-  <div class="transition container">
-    <img class="logo" src="/images/tire.png">
-      <p class="main-text"> Everyone Rides Nice is a non-profit that provides bus fare to those in need.
-        <br> NICE bus provides the service, while ERN provides the fare. </p>
-        <br>
-        <img class="nice-logo" src="/images/niceBusLogo.png">
-        <img class="bus-cutout" src="/images/busCutout.jpeg">
+  <div class="transition container" id="about">
+      <div class="icon-container" >
+        <div class="icons">
+          <i class="fa fa-universal-access fa-5x" aria-hidden="true"></i>
+          <i class="fa fa-bus fa-5x" aria-hidden="true"></i>
+          <i class="fa fa-briefcase fa-5x" aria-hidden="true"></i>
+        </div>
+        <div class="captions">
+          <p class="main-text"> Everyone Rides Nice is a non-profit agency that provides bus fare to those in need.</p>
+          <p class="main-text mobile"> NICE bus provides the service, while ERN provides the fare. </p>
+          <p class="main-text mobile"> ERN provides local agencies with free bus transportation in the form of MetroCards </p>
+        <!-- <img class="nice-logo" src="/images/niceBusLogo.png"> -->
+        <img class="logo" src="/images/tire.png">
+      </div>
+        <!-- <img class="bus-cutout" src="/images/busCutout.jpeg"> -->
   </div>
     <!-- Page Content -->
     <div class="container">
@@ -142,17 +164,139 @@
         <hr class="featurette-divider">
 
         <!-- Third Featurette -->
-        <!-- <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+        <div class="featurette" id="donate">
+            <!-- <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
             <h2 class="featurette-heading">The Third Heading
                 <span class="text-muted">Will Seal the Deal.</span>
             </h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div> -->
+        <!-- <div class="donate-pic">
+          <img class="donate-pic" src="/images/emptyBus.jpg">
+
+        </div> -->
+          <div class="donate-container container">
+            <!-- <img class="blue-square" src='/images/donationsSquare.png'> -->
+            <!-- <img class="donate-button" src="/images/Donate_Button.png"> -->
+            <div class="donate">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                  <input type="image" src="/images/Donate_Button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+            </div>
+            <p class="donate-text"> Through your contributions, we are able to serve people throughout Nassau County.<br><br>Thank you for your generosity</p>
+          </div>
+        <hr class="featurette-divider">
+
+      <!-- fourth featurette -->
+        <div class="featurette" id="faq">
+          <div class="faq-header">
+            <h2>FAQs</h2>
+          </div>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Can I get free MetroCards directly from ERN?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  No, ERN works exclusively through agencies that are already in touch with people who need the transportation assistance.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How will ERN decide if I am eligible?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Eligibility decisions are made by the participating agencies, not by ERN.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Will ERN assist me with LIRR or taxi fare?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  No ERN is only able to provide MetroCards
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Where does ERN get its funds?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                  ERN began with a $1.25 million grant from Transdev and actively seeks funding from private philanthropists, other foundations, and government programs designed to provide such assistance                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                     How does ERN choose the agencies it works with?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                  There is an application process for agencies and specific criteria. The application can be obtained through the contact section.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingSix">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                     Is there a connection between ERN and the United Way of Long Island?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                <div class="panel-body">
+                  ERN contracts with UW for administrative services
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingSeven">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Can I contribute to ERN?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                <div class="panel-body">
+                  Contribution of all sizes are the lifeblood of the organization. You can donate through this website, which uses Paypal authorization for added security, or contact us below
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <hr class="featurette-divider"> -->
-
-
+        <hr class="featurette-divider">
 
 
 <!-- Contact Section -->
@@ -213,7 +357,7 @@
     <footer class="main">
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Everyone Rides Nice 2016</p>
+                <p class="footer">Copyright &copy; Everyone Rides Nice 2016</p>
             </div>
         </div>
     </footer>
