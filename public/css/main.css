@@ -244,7 +244,9 @@ div.hidden-menu {
   margin-top: 3%;
   margin-right: 32%;
 }
-
+div#donate.featurette {
+  padding-top: 45%;
+}
 p.donate-text {
   font-size: 16px;
   margin-left: 7%;
@@ -264,7 +266,15 @@ p.donate-text {
   letter-spacing: 1.5px;
   height: 300px;
 }
+img.rider {
+  width: 100%;
+  margin-bottom: -10%;
+  margin-top: 10%;
+}
 
+div#faq.featurette {
+  margin: 10%;
+}
 /*div.whiteBox {
   background color: white;
   height: 100px;
